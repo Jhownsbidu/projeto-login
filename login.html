@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
 <body>
@@ -16,12 +17,33 @@
                 
 
             </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action=""></form>
+                 <div id="formulario">
+                    <h1>Login</h1>
+                        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                        person
+                        </span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mal" required autocomplete="email" minlength="8" maxlength="20">
+                        <label for="ilogin">Login</label>
 
-            </div>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                        key
+                        </span>
+                            <input type="password" name="Senha" id="isenha" placeholder="Sua senha" required autocomplete="current-password" minlength="5" maxlength="10">
+                            <label for="isenha">Senha</label>
+                     </div>
+                         <input type="submit" value="Entrar">
+                         <a href="esquec.html" class="botao"> 
+                            Esqueci a senha <i class="material-symbols-outlined">mail</i>
+                         </a>
+                 </form>
+
+          </div>
+
         </section>
     </main>
     
